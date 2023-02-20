@@ -1,18 +1,18 @@
-include < stdio.h >
-/**
- * main - prints the alphabet in lowercase.
- *
- * Return: 0 on success
- */
-int main(void)
-{
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
-	return (0);
-}
+#include <stdio.h> 
+ /** 
+  * main - Entry point a program that evaluate random number 
+  * 
+  * Return:always 0 (success) 
+  */ 
+  
+ int main(void) 
+ { 
+         char lc; 
+  
+         for (lc = 'a'; lc <= 'z'; lc++) 
+         { 
+                 putchar(lc); 
+         } 
+         putchar('\n'); 
+         return (0); 
+ }
