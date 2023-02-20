@@ -1,16 +1,18 @@
 #include<stdio.h>
 /**
- * main - Entry point a program that evaluate rand
- * om number
- * Return:always 0
+ * main - Prints numbers 0-9 without using char or printf/puts,
+ * and putchar 2x max
+(* 	
+ * Return: 0 on success
  */
 int main(void)
 {
-	int n;
+	int i = ' 0';
 
-	for (n = 0; (n <= 9); n++)
+	while (i <= '9')
 	{
-		putcha(n + '0');
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
