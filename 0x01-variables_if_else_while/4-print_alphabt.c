@@ -1,17 +1,21 @@
 #include <stdio.h>
 /**
- * main - Entry point a program that evaluate rand
- * om number
+ * main - Prints the alphabet except the letters q and e.
  *
  * Return:always 0
  */
 int main(void)
 {
-	int n;
+	char c = 'a';
 
-	for (n = 0; (n <= 9); n++)
+	while (c <= 'Z')
 	{
-		printf("%d", n);
+		if (c != 'q' && c != 'e')
+		{
+			putchar(c);
+		}
+		c++;
+
 	}
 	putchar('\n');
 	return (0);
