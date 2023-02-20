@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- * main	-
- * Entry point a program that evaluate random number
+ * main	- Entry point a program that evaluate rand
+ * om number
  *
  * Return:always 0
  */
