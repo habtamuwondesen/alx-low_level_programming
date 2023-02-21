@@ -1,14 +1,13 @@
 #include <stdio.h>
 /**
- * main - Prints numbers 0-9 without using char or printf/puts
+ * main - prints numbers 0-9 without using char or printf/puts,
  * and putchar 2x max
- *
- * Return: 0 ( success)
+(*
+ * Return: 0 on success
  */
-
 int main(void)
 {
-	int i = ' 0';
+	int i = '0';
 
 	while (i <= '9')
 	{
