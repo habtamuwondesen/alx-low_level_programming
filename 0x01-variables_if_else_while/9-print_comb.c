@@ -1,24 +1,24 @@
 #include <stdio.h>
 /**
- * main -  Entry point a program that evaluate rand
- * om number
- * Return:always 0 (success)
+ * main - prints all possible combinations of single digit numbers.
+(*
+ * Return: 0 on success
  */
-
 int main(void)
 {
-	int n;
+	int i = '0';
 
-	for (n = '0' ; n <= '9' ; n++)
+	while (i <= '9')
 	{
-		putchar(n);
-
-		if (n != '9')
+		putchar(i);
+		if (i != '9')
 		{
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
+		++i;
 	}
 	putchar('\n');
 	return (0);
+
 }
