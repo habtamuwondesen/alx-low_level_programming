@@ -1,21 +1,18 @@
 #include <stdio.h>
 /**
- * main - Entry point a program that evaluate random number
+ * main - prints the alphabet in lowercase.
  *
- * Return:always 0 (success)
+ * Return: 0 on success
  */
-
 int main(void)
 {
-	char 1c;
+	char c = 'a';
 
-	for (1c = 'a'; 1c <= 'z'; 1c++)
-
-	{	
-	      putchar(1c);
-
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
 	}
-
- 	putchar('\n');
- 	return (0);
+	putchar('\n');
+	return (0);
 }
