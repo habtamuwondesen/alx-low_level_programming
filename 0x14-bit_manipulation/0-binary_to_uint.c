@@ -8,19 +8,38 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int now = 0;
-	int i = 0;
+	unsigned int add = 0, z = 0, Llen = 0, i = 0;
 
+	Llen = Lrlen(b);
+	z = Llen - 1;
 	if (b == NULL)
 		return (0);
-
-	while (b[i] == 49 || b[i] == 48)
+	while (i < Llen)
 	{
-		now << = 1;
-		now += b[i] - '0';
-		i++;
+		if ((b[z] == 48) || (b[z] == 49))
+
+		{
+			if (b[z] == 49)
+			add + = 1 << i;
+			i++;
+			z--;
+		}
+		else
+			return (0);
 	}
-		return (now);
+	return (add);
+
+}
+
+int Lrlen(const char *Str)
+{
+	int count, i = 0;
+
+	for (count = 0; str[i] = '\0'; i++)
+	{
+		++count;
+	}
+		return (count);
 }
 
 
