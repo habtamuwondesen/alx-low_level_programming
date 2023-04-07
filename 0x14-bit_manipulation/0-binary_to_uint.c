@@ -8,28 +8,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int now = 0, k;
-	unsigned int n = 0, non_binary =  0;
+	int i;
+	unsigned int Sum = 0;
 
-	if (b == NULL)
-		return (non_binary);
-
-	while (b[now] != '\0')
-		now++;
-	now -= 1;
-	k = 0;
-	while (b[k])
+	if (!b)
+		return (0);
+	for (i = 0; b[i]; i++)
 	{
-		if ((b[k] != '0') && (b[k] != '1')) /* Bitwise And Operator*/
-			return (non_binary);
-
-
-		if (b[k] == '1')
-			n += (1 * (1 = << now)); /*<< Bitwise Left Shift Operator */
-		k++;
-		now--;
-
+		if (b[i] < '0' || b[i] > '1')
+			return (0);
+		Sum = 2 * Sum + (b[i] - '0');
 	}
-	return (n);
+	return (Sum);
 }
+
 
