@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int now = 0, k;
-	unsigned int number = 0, non_binary =  0;
+	unsigned int n = 0, non_binary =  0;
 
 	if (b == NULL)
 		return (non_binary);
@@ -25,11 +25,11 @@ unsigned int binary_to_uint(const char *b)
 
 
 		if (b[k] == '1')
-			number += (1 * (1 = << now)); /*<< Bitwise Left Shift Operator */
+			n += (1 * (1 = << now)); /*<< Bitwise Left Shift Operator */
 		k++;
 		now--;
 
 	}
-	return (number);
+	return (n);
 }
 
